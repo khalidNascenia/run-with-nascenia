@@ -1,0 +1,163 @@
+* {
+	font-family: 'Dosis', sans-serif;
+}
+.full-page {
+    position: relative;
+	background: url(../images/run-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-position: bottom;
+    
+}
+.full-page::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to left, #000000, transparent);
+	    opacity: 0.8; 
+      }
+
+.navbar-default {
+    border: none;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.79) 0%, #ffffff 100%);
+    height: 100px;
+}
+.navbar-brand {
+	float: none;
+	display: inline-block;
+}
+.reg-button {
+    padding-left: 5px;
+}
+.header-design {
+	font-size: 60px;
+	color: rgb(245,130,32);
+	padding: 12px 0 0 0;
+}
+.reg-button .paragraph-design {
+    margin: 30px 0 40px;   
+}
+.paragraph-design {
+	font-size: 40px;
+	color: rgb(255,255,255);
+	padding: 12px 0;
+}
+.countdownCubeTitleDiv {
+    text-transform: capitalize;
+    color: #e2e2e2;
+    text-align: left !important;
+    font-weight: 500;
+    font-size: 22px !important;
+    padding: 0 0 !important;
+}
+.Registration-button {
+	font-size: 46px;
+    color: rgb(255,255,255);
+    background-color: #f5811f;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.event-div {
+	clear: both;
+	margin: 130px 0 0 50px;
+    padding: 12px;
+}
+.logo {
+	text-align: right;
+}
+.logo-img {
+    height: 50px;
+    margin-right: 60px;
+    margin-top: 5px;
+}
+.countdownCubeCube figure {
+    font-weight: 500;
+    font-size: 110px !important;
+}
+/*
+.full-page::before {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.08);
+    z-index: 2;
+    cursor: pointer;
+    content: '';
+}
+*/
+.footer-design {
+	position: fixed;
+	bottom: 5px;
+	left: 10%;
+}
+.footer-design p {
+	font-size: 18px;
+	color: white;
+}
+@media only screen and (max-width: 767px) {
+    .full-page {
+        height: inherit;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header-design {
+    	font-size: 30px;
+    }
+    .event-div {
+        padding: 0;
+    }
+    .paragraph-design {
+    	font-size: 16px;
+    	padding: 8px 0;
+    }
+    .countdownCubeCube figure {
+    	font-size: 50px !important;
+    }
+    .countdownCubeTitleDiv {
+    	font-size: 18px !important;
+    	padding: 0 !important;
+    }
+    .Registration-button{
+		font-size: 16px;
+    }
+    .reg-button{
+    	margin-top: 10px;
+    }
+    .footer-design p {
+        font-size: 14px;
+    }
+    .logo-img {
+        margin-top: 0;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 480px) {
+     .full-page {
+        height: 100vh;
+    }
+    .navbar-default {
+        height: 66px;
+    }
+    .logo-img {
+        width: 150px;
+        height: auto;
+    }
+    .full-page {
+    background: url(../images/Mobile-version.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: bottom;
+}
+}

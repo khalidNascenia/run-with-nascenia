@@ -1,7 +1,6 @@
 $( document ).ready(function() {
-
       var targetDate = new Date();
-      targetDate.setMonth(targetDate.getMonth() + 1)
+      targetDate.setMonth(targetDate.getMonth())
       targetDate.setDate(5)
       targetDate.setHours(6)
       targetDate.setMinutes(30)
@@ -75,25 +74,20 @@ $( document ).ready(function() {
         } );
       };
 
-      
-
- 		if($(window).width() < 480)
- 		{
- 			 $('#counter-days-only').countdownCube( {
- 			 	target: targetDateStringUTC,
- 			 	cubeSize: 70,
- 			 	showDaysOnly: true,
- 			 	color: 'white',
- 			 });
-
- 		}
- 		else {
- 			 $('#counter-days-only').countdownCube( {
-		        target: targetDateStringUTC,
-		        cubeSize: 130,
-		        color: 'white',
-		        showDaysOnly: true,
-      } );
- 		}
+      if($(window).width() < 480) {
+	 $('#counter-days-only').countdownCube( {
+		target: targetDateStringUTC,
+		cubeSize: 70,
+		showDaysOnly: true,
+		color: 'white',
+	 });
+ 	} else {
+	  $('#counter-days-only').countdownCube( {
+	  target: targetDateStringUTC,
+	  cubeSize: 130,
+	  color: 'white',
+	  showDaysOnly: true,
+      });
+    }
 		
 });
